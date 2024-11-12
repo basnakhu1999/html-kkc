@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>นับจำนวนคนเข้าชม</title>
+    <script>
+        // ฟังก์ชันเพื่อเก็บข้อมูลการเข้าชม
+        function trackVisitors() {
+            // ตรวจสอบว่ามีการตั้งค่าใน localStorage หรือยัง
+            let today = new Date().toISOString().split('T')[0]; // เอาวันที่ในรูปแบบ YYYY-MM-DD
+
+            let lastVisitDate = localStorage.getItem('lastVisitDate');
+            let visitorCount = parseInt(localStorage.getItem('visitorCount')) || 0;
+
+            if (lastVisitDate !== today) {
+                // ถ้าเป็นวันที่ใหม่ ให้เพิ่มจำนวนคนเข้าชม
+                visitorCount++;
+                localStorage.setItem('visitorCount', visitorCount);
+                localStorage.setItem('lastVisitDate', today);
+            }
+
+            // แสดงผลจำนวนคนเข้าชม
+            document.getElementById("visitorCount").textContent = "จำนวนคนเข้าชมในวันนี้: " + visitorCount;
+        }
+
+        // เรียกใช้งานฟังก์ชันเมื่อโหลดหน้าเว็บ
+        window.onload = trackVisitors;
+    </script>
+</head>
+<body>
+    <h1>ยินดีต้อนรับสู่เว็บไซต์ของเรา!</h1>
+    <p id="visitorCount">กำลังโหลดข้อมูลจำนวนคนเข้าชม...</p>
+</body>
+</html>
