@@ -1,0 +1,87 @@
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet">
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	margin: 0;
+	font-family: 'Sriracha';
+	background-color: #f4f4f4;
+	flex-direction: column; /* จัดให้ฟอร์มอยู่ในแนวตั้ง */
+}
+
+.container {
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	font-family: 'Sriracha';
+	font-size: larger;
+
+}
+
+input[type="text"] {
+	padding: 10px;
+	border: 2px solid #ccc;
+	border-radius: 5px;
+	width: 300px;
+	margin-bottom: 10px;
+	font-size: 16px;
+}
+
+button {
+	width: 200px;
+	height: 60px;
+
+	font-family: 'Sriracha';
+	padding: 15px 30px;
+	font-size: 26px;
+	background-image: url('https://github.com/basnakhu1999/html-kkc/blob/main/scr/sent.png?raw=true'); /* เปลี่ยนเป็น path รูปภาพของคุณ */
+	background-size: cover;
+	color: white;
+	border: none;
+	border-radius: 8px;
+	cursor: pointer;
+	
+	text-align: center;
+	display: inline-block;
+	transition: background 0.3s ease;
+}
+
+button:hover {
+	
+	font-family: 'Sriracha';
+}
+
+
+
+@keyframes moveRight {
+    0% {
+        transform: translate(-50%, -50%) translateX(0); /* เริ่มต้นจากตรงกลาง */
+        opacity: 1; /* เริ่มต้นเต็มที่ */
+    }
+    70% {
+        transform: translate(-50%, -50%) translateX(150px); /* ขยับไปข้างขวา */
+        opacity: 1; /* คงความโปร่งใส */
+    }
+    100% {
+        transform: translate(-50%, -50%) translateX(300px); /* ขยับไปขวาอีกจุด */
+        opacity: 0; /* จางหายไป */
+    }
+}
+
+.floating-message {
+	font-family: 'Sriracha';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    background-color: #837fda;
+    color: white;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    animation: moveRight 10s ease-in-out forwards; /* ใช้เวลา 10 วินาที */
+}
