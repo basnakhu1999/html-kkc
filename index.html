@@ -273,32 +273,8 @@
     <!-- div ที่จะอยู่กลางหน้าจอ -->
     <div class="centered-div">
         <h5>จำนวนกระทงล่าสุด</h5>
-		<?php include 'visitor.php'; ?>
-
-
-
-		<script>
-			// ฟังก์ชันที่ใช้ในการนับจำนวนผู้เข้าชม
-			function trackVisitors() {
-				let visitorCount = parseInt(localStorage.getItem('visitorCount')) || 0;
-				let lastVisit = localStorage.getItem('lastVisit');
-				let currentTime = new Date().getTime(); // เวลาปัจจุบันในหน่วยมิลลิวินาที
-				let oneHour = 60 * 60 * 1000; // 1 ชั่วโมง (1 ชั่วโมง = 60 นาที * 60 วินาที * 1000 มิลลิวินาที)
-	
-				if (!lastVisit || currentTime - lastVisit > oneHour) {
-					// ถ้าไม่มีข้อมูล lastVisit หรือเวลาที่ผ่านมาเกิน 1 ชั่วโมง
-					visitorCount++; // เพิ่มจำนวนผู้เข้าชม
-					localStorage.setItem('visitorCount', visitorCount); // บันทึกจำนวนผู้เข้าชมใหม่
-					localStorage.setItem('lastVisit', currentTime); // บันทึกเวลาที่เข้าชมล่าสุด
-				}
-	
-				// แสดงผลจำนวนผู้เข้าชม
-				document.getElementById('visitorCount').textContent = "ทั้งหมด: " + visitorCount;
-			}
-	
-			// เรียกใช้ฟังก์ชันเมื่อโหลดหน้าเว็บ
-			window.onload = trackVisitors;
-		</script>
+        
+		<a href="#" title="visitors counter"><img src="https://counter6.optistats.ovh/private/freecounterstat.php?c=3n79ft561ukjc99csc5lfh9weqhzsute" border="0" title="visitors counter" alt="visitors counter"></a>
 
 
 
