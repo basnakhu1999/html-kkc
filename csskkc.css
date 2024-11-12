@@ -52,7 +52,8 @@ button {
 button:hover {
 	width: 200px;
 	height: 60px;
-	background-image: url('https://github.com/basnakhu1999/html-kkc/blob/main/scr/hoversent.png?raw=true'); /* เปลี่ยนเป็น path รูปภาพของคุณ */
+	color: black;
+	border-radius: 8px;
 	font-family: 'Sriracha';
 }
 
