@@ -1,192 +1,194 @@
 			html { 
 			  background: url("https://semicon.github.io/loykrathong/img/##.jpg");
+			
 			}
-			.items-slide {
-					animation: 10s linear 0s normal none infinite slide; 
-				}
+			  .items-slide {
+				animation: 5s linear 0s normal none infinite slide;
+			}
 			.items-slide-45 {
-					animation: 46s linear 0s normal none infinite slide0; 
-				}
+				animation: 23s linear 0s normal none infinite slide0;
+			}
 			.items-slide-46 {
-					animation: 47s linear 1.5s normal none infinite slide1; 
-				}
+				animation: 24s linear 1.5s normal none infinite slide1;
+			}
 			.items-slide-47 {
-					animation: 48s linear 3s normal none infinite slide3; 
-				}
+				animation: 25s linear 3s normal none infinite slide3;
+			}
 			.items-slide-48 {
-					animation: 49s linear 4.5s normal none infinite slide4; 
-				}
+				animation: 26s linear 4.5s normal none infinite slide4;
+			}
 			.items-slide-49 {
-					animation: 50s linear 6s normal none infinite slide1; 
-				}
+				animation: 27s linear 6s normal none infinite slide1;
+			}
 			.items-slide-50 {
-					animation: 51s linear 7.5s normal none infinite slide2; 
-				}
+				animation: 28s linear 7.5s normal none infinite slide2;
+			}
 			.items-slide-51 {
-					animation: 52s linear 9s normal none infinite slide4; 
-				}
+				animation: 29s linear 9s normal none infinite slide4;
+			}
 			.items-slide-52 {
-					animation: 53s linear 10.5s normal none infinite slide0; 
-				}
+				animation: 30s linear 10.5s normal none infinite slide0;
+			}
 			.items-slide-53 {
-					animation: 54s linear 12s normal none infinite slide2; 
-				}
+				animation: 31s linear 12s normal none infinite slide2;
+			}
 			.items-slide-54 {
-					animation: 55s linear 13.5s normal none infinite slide3; 
-				}
+				animation: 32s linear 13.5s normal none infinite slide3;
+			}
 			.items-slide-55 {
-					animation: 56s linear 15s normal none infinite slide0; 
-				}
+				animation: 33s linear 15s normal none infinite slide0;
+			}
 			.items-slide-56 {
-					animation: 57s linear 16.5s normal none infinite slide1; 
-				}
+				animation: 34s linear 16.5s normal none infinite slide1;
+			}
 			.items-slide-57 {
-					animation: 58s linear 18s normal none infinite slide3; 
-				}
+				animation: 35s linear 18s normal none infinite slide3;
+			}
 			.items-slide-58 {
-					animation: 59s linear 19.5s normal none infinite slide4; 
-				}
+				animation: 36s linear 19.5s normal none infinite slide4;
+			}
 			.items-slide-59 {
-					animation: 60s linear 21s normal none infinite slide1; 
-				}
+				animation: 37s linear 21s normal none infinite slide1;
+			}
 			.items-slide-60 {
-					animation: 61s linear 22.5s normal none infinite slide2; 
-				}
+				animation: 38s linear 22.5s normal none infinite slide2;
+			}
 			.items-slide-61 {
-					animation: 62s linear 24s normal none infinite slide4; 
-				}
+				animation: 39s linear 24s normal none infinite slide4;
+			}
 			.items-slide-62 {
-					animation: 63s linear 25.5s normal none infinite slide0; 
-				}
+				animation: 40s linear 25.5s normal none infinite slide0;
+			}
 			.items-slide-63 {
-					animation: 64s linear 27s normal none infinite slide2; 
-				}
+				animation: 41s linear 27s normal none infinite slide2;
+			}
 			.items-slide-64 {
-					animation: 65s linear 28.5s normal none infinite slide3; 
-				}
+				animation: 42s linear 28.5s normal none infinite slide3;
+			}
 			.items-slide-65 {
-					animation: 66s linear 30s normal none infinite slide0; 
-				}
+				animation: 43s linear 30s normal none infinite slide0;
+			}
 			.items-slide-66 {
-					animation: 67s linear 31.5s normal none infinite slide1; 
-				}
+				animation: 44s linear 31.5s normal none infinite slide1;
+			}
 			.items-slide-67 {
-					animation: 68s linear 33s normal none infinite slide3; 
-				}
+				animation: 45s linear 33s normal none infinite slide3;
+			}
 			.items-slide-68 {
-					animation: 69s linear 34.5s normal none infinite slide4; 
-				}
+				animation: 46s linear 34.5s normal none infinite slide4;
+			}
 			.items-slide-69 {
-					animation: 70s linear 36s normal none infinite slide1; 
-				}
-				.items-slide-70 {
-					animation: 71s linear 37.5s normal none infinite slide2; 
-				}
+				animation: 47s linear 36s normal none infinite slide1;
+			}
+			.items-slide-70 {
+				animation: 48s linear 37.5s normal none infinite slide2;
+			}
 			.items-slide-71 {
-					animation: 72s linear 39s normal none infinite slide4; 
-				}
-				.items-slide-72 {
-					animation: 73s linear 40.5s normal none infinite slide0; 
-				}
+				animation: 49s linear 39s normal none infinite slide4;
+			}
+			.items-slide-72 {
+				animation: 50s linear 40.5s normal none infinite slide0;
+			}
 			.items-slide-73 {
-					animation: 74s linear 42s normal none infinite slide2; 
-				}
+				animation: 51s linear 42s normal none infinite slide2;
+			}
 			.items-slide-74 {
-					animation: 75s linear 43.5s normal none infinite slide3; 
-				}
+				animation: 52s linear 43.5s normal none infinite slide3;
+			}
 			.items-slide-75 {
-					animation: 76s linear 45s normal none infinite slide0; 
-				}
+				animation: 53s linear 45s normal none infinite slide0;
+			}
 			.items-slide-76 {
-					animation: 77s linear 46.5s normal none infinite slide1; 
-				}
+				animation: 54s linear 46.5s normal none infinite slide1;
+			}
 			.items-slide-77 {
-					animation: 78s linear 48s normal none infinite slide3; 
-				}
+				animation: 55s linear 48s normal none infinite slide3;
+			}
 			.items-slide-78 {
-					animation: 79s linear 49.5s normal none infinite slide4; 
-				}
+				animation: 56s linear 49.5s normal none infinite slide4;
+			}
 			.items-slide-79 {
-					animation: 80s linear 51s normal none infinite slide1; 
-				}
+				animation: 57s linear 51s normal none infinite slide1;
+			}
 			.items-slide-80 {
-					animation: 81s linear 52.5s normal none infinite slide2; 
-				}
+				animation: 58s linear 52.5s normal none infinite slide2;
+			}
 			.items-slide-81 {
-					animation: 82s linear 54s normal none infinite slide4; 
-				}
+				animation: 59s linear 54s normal none infinite slide4;
+			}
 			.items-slide-82 {
-					animation: 83s linear 55.5s normal none infinite slide0; 
-				}
+				animation: 60s linear 55.5s normal none infinite slide0;
+			}
 			.items-slide-83 {
-					animation: 84s linear 57s normal none infinite slide2; 
-				}
+				animation: 61s linear 57s normal none infinite slide2;
+			}
 			.items-slide-84 {
-					animation: 85s linear 58.5s normal none infinite slide3; 
-				}
+				animation: 62s linear 58.5s normal none infinite slide3;
+			}
 			.items-slide-85 {
-					animation: 86s linear 60s normal none infinite slide0; 
-				}
+				animation: 63s linear 60s normal none infinite slide0;
+			}
 			.items-slide-86 {
-					animation: 87s linear 61.5s normal none infinite slide1; 
-				}
+				animation: 64s linear 61.5s normal none infinite slide1;
+			}
 			.items-slide-87 {
-					animation: 88s linear 63s normal none infinite slide3; 
-				}
+				animation: 65s linear 63s normal none infinite slide3;
+			}
 			.items-slide-88 {
-					animation: 89s linear 64.5s normal none infinite slide4; 
-				}
-				.items-slide-89 {
-					animation: 90s linear 66s normal none infinite slide1; 
-				}
+				animation: 66s linear 64.5s normal none infinite slide4;
+			}
+			.items-slide-89 {
+				animation: 67s linear 66s normal none infinite slide1;
+			}
 			.items-slide-90 {
-					animation: 91s linear 67.5s normal none infinite slide2; 
-				}
+				animation: 68s linear 67.5s normal none infinite slide2;
+			}
 			.items-slide-91 {
-					animation: 92s linear 69s normal none infinite slide4; 
-				}
+				animation: 69s linear 69s normal none infinite slide4;
+			}
 			.items-slide-92 {
-					animation: 93s linear 70.5s normal none infinite slide0; 
-				}
+				animation: 70s linear 70.5s normal none infinite slide0;
+			}
 			.items-slide-93 {
-					animation: 94s linear 72s normal none infinite slide2; 
-				}
+				animation: 71s linear 72s normal none infinite slide2;
+			}
 			.items-slide-94 {
-					animation: 95s linear 73.5s normal none infinite slide3; 
-				}
+				animation: 72s linear 73.5s normal none infinite slide3;
+			}
 			.items-slide-95 {
-					animation: 96s linear 75s normal none infinite slide0; 
-				}
+				animation: 73s linear 75s normal none infinite slide0;
+			}
 			.items-slide-96 {
-					animation: 97s linear 76.5s normal none infinite slide1; 
-				}
+				animation: 74s linear 76.5s normal none infinite slide1;
+			}
 			.items-slide-97 {
-					animation: 98s linear 78s normal none infinite slide3; 
-				}
+				animation: 75s linear 78s normal none infinite slide3;
+			}
 			.items-slide-98 {
-					animation: 99s linear 79.5s normal none infinite slide4; 
-				}
+				animation: 76s linear 79.5s normal none infinite slide4;
+			}
 			.items-slide-99 {
-					animation: 100s linear 81s normal none infinite slide1; 
-				}
+				animation: 77s linear 81s normal none infinite slide1;
+			}
 			.items-slide-100 {
-					animation: 101s linear 82.5s normal none infinite slide2; 
-				}
+				animation: 78s linear 82.5s normal none infinite slide2;
+			}
 			.items-slide-101 {
-					animation: 102s linear 84s normal none infinite slide4; 
-				}
+				animation: 79s linear 84s normal none infinite slide4;
+			}
 			.items-slide-102 {
-					animation: 103s linear 85.5s normal none infinite slide0; 
-				}
+				animation: 80s linear 85.5s normal none infinite slide0;
+			}
 			.items-slide-103 {
-					animation: 104s linear 87s normal none infinite slide2; 
-				}
+				animation: 81s linear 87s normal none infinite slide2;
+			}
 			.items-slide-104 {
-					animation: 105s linear 88.5s normal none infinite slide3; 
-				}
+				animation: 82s linear 88.5s normal none infinite slide3;
+			}
 			.items-slide-105 {
-					animation: 106s linear 90s normal none infinite slide0; 
-				}
+				animation: 83s linear 90s normal none infinite slide0;
+			}
+			
 				
 			.bg-main {
 				  height: 80vh;
@@ -204,7 +206,7 @@
 				}
 				
 			.bg-main .river {
-				  height: 144px;
+				  height: 120px;
 				  position: absolute;
 				  z-index: 99;
 				  width: 100%;
@@ -330,7 +332,7 @@
 
 			@-webkit-keyframes slide0 {
 				  0% {
-					left: -200px;
+					left: -100px;
 					top: -60px;
 					z-index:801;
 				  }
@@ -344,7 +346,7 @@
 
 			@keyframes slide0 {
 				  0% {
-					left: -200px;
+					left: -100px;
 					top: -60px;
 					z-index:801;
 				  }
@@ -358,7 +360,7 @@
 
 			@-webkit-keyframes slide1 {
 				  0% {
-					left: -300px;
+					left: -200px;
 					top: -80px;
 					z-index:800;
 				  }
@@ -372,7 +374,7 @@
 
 			@keyframes slide1 {
 				  0% {
-					left: -300px;
+					left: -200px;
 					top: -80px;
 					z-index:800;
 				  }
