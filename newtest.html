@@ -3,66 +3,317 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Web Page</title>
+    <title>เว็บไซต์ของฉัน</title>
+
+
+    <link href="./csskkc.css" rel="stylesheet">
+		
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet">
     <style>
-        * {
+        /* ตั้งค่าพื้นหลังและไม่ให้มีการซูมหรือย่อขยาย */
+        html, body {
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
+            height: 100%;
+            overflow: hidden;
             background-image: url('https://github.com/basnakhu1999/html-kkc/blob/main/scr/BG.png?raw=true');
             background-size: cover;
             background-position: center;
+            position: relative;
+        }
+
+        /* ตั้งค่าผู้ช่วยสำหรับการจัดตำแหน่งรูปภาพเคลื่อนไหว */
+        .carousel-container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
             display: flex;
-            flex-direction: column;
-            justify-content: flex-end;
-            align-items: center;
-            min-height: 100vh;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .carousel-image {
+            width: 100px;
+            height: 100px;
+            animation: moveImages 10s ease-in-out infinite, tiltImages 2s ease-in-out infinite;
+        }
+
+        @keyframes moveImages {
+            0% { transform: translateX(0); }
+            50% { transform: translateX(200px); }
+            100% { transform: translateX(0); }
+        }
+
+        @keyframes tiltImages {
+            0%, 100% { transform: rotate(0); }
+            25% { transform: rotate(-10deg); }
+            50% { transform: rotate(10deg); }
+            75% { transform: rotate(-10deg); }
+        }
+
+        /* ฟอร์มข้อความ */
+        .message-form {
+            position: absolute;
+            bottom: 50px;
+            left: 50%;
+            transform: translateX(-50%);
             text-align: center;
-            color: white;
         }
 
-        .content {
-            margin-bottom: 2rem;
+        .message-form input {
+            padding: 10px;
+            font-size: 16px;
+            margin-right: 10px;
         }
 
-        .button-container {
-            margin-bottom: 1rem;
-        }
-
-        button {
+        .message-form button {
             padding: 10px 20px;
             font-size: 16px;
-            border: none;
-            border-radius: 5px;
-            background-color: rgba(0, 123, 255, 0.8);
-            color: white;
             cursor: pointer;
-            transition: background-color 0.3s;
         }
 
-        button:hover {
-            background-color: rgba(0, 123, 255, 1);
+        /* ข้อความที่แสดงเมื่อส่ง */
+        .message-box {
+            display: none;
+            position: absolute;
+            bottom: 100px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            animation: floatMessage 5s infinite;
         }
 
-        @media (max-width: 600px) {
-            button {
-                font-size: 14px;
-                padding: 8px 16px;
-            }
+        @keyframes floatMessage {
+            0% { opacity: 1; transform: translateX(-50%) translateY(0); }
+            50% { opacity: 0.5; transform: translateX(-50%) translateY(-10px); }
+            100% { opacity: 0; transform: translateX(-50%) translateY(-20px); }
         }
     </style>
 </head>
 <body>
-    <div class="content">
-        <h1>ข้อความที่คุณต้องการแสดง</h1>
-        <p>ข้อความเพิ่มเติมสามารถใส่ที่นี่</p>
+    <div class="bg-main bg-province1">
+        <div class="river">
+                <div id="divProvince1" style="">
+                    <div class="item-relative">
+                        <div class="items-slide-46 item-base-slide ">
+                            <div class="items-topdown">
+                                <div class="items-swing item-4 items-thumb">
+                                <img src="./img/krathong.png" alt="กระทง0">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-relative">
+                        <div class="items-slide-57 item-base-slide ">
+                            <div class="items-topdown">
+                                <div class="items-swing item-0 items-thumb">
+                                <img src="./img/krathong-1.png" alt="กระทง0">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-relative">
+                        <div class="items-slide-64 item-base-slide ">
+                            <div class="items-topdown">
+                                <div class="items-swing item-1 items-thumb">
+                                <img src="./img/krathong-2.png" alt="กระทง1">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                                                        
+                    <div class="item-relative">
+                        <div class="items-slide-47 item-base-slide ">
+                            <div class="items-topdown">
+                                <div class="items-swing item-2 items-thumb">
+                                <img src="./img/krathong-3.png" alt="กระทง2">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-relative">
+                        <div class="items-slide-48 item-base-slide ">
+                            <div class="items-topdown">
+                                <div class="items-swing item-3 items-thumb">
+                                <img src="./img/krathong-4.png" alt="กระทง3">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-relative">
+                        <div class="items-slide-49 item-base-slide ">
+                            <div class="items-topdown">
+                                <div class="items-swing item-4 items-thumb">
+                                <img src="./img/krathong-5.png" alt="กระทง4">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-relative">
+                        <div class="items-slide-50 item-base-slide ">
+                            <div class="items-topdown">
+                                <div class="items-swing item-0 items-thumb">
+                                <img src="./img/krathong-6.png" alt="กระทง0">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                                                        
+                    <div class="item-relative">
+                        <div class="items-slide-51 item-base-slide ">
+                            <div class="items-topdown">
+                                <div class="items-swing item-1 items-thumb">
+                                <img src="./img/krathong-1.png" alt="กระทง1">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                                                        
+                                                                        
+                    <div class="item-relative">
+                        <div class="items-slide-52 item-base-slide ">
+                            <div class="items-topdown">
+                                <div class="items-swing item-2 items-thumb">
+                                <img src="./img/krathong-2.png" alt="กระทง2">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                                                        
+                    <div class="item-relative">
+                        <div class="items-slide-53 item-base-slide " >
+                            <div class="items-topdown">
+                                <div class="items-swing item-3 items-thumb">
+                                <img src="./img/krathong-3.png" alt="กระทง3">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                                                        
+                                                                        
+                 <div class="item-relative">
+                        <div class="items-slide-54 item-base-slide ">
+                            <div class="items-topdown">
+                                <div class="items-swing item-4 items-thumb">
+                                <img src="./img/krathong-4.png" alt="กระทง4">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                                                        
+                    <div class="item-relative">
+                        <div class="items-slide-55 item-base-slide ">
+                            <div class="items-topdown">
+                                <div class="items-swing item-0 items-thumb">
+                                <img src="./img/krathong-5.png" alt="กระทง0">
+                                                                        </div>
+                            </div>
+                        </div>
+                    </div>
+                                                                        
+                    <div class="item-relative">
+                        <div class="items-slide-56 item-base-slide ">
+                            <div class="items-topdown">
+                                <div class="items-swing item-1 items-thumb">
+                                <img src="./img/krathong-6.png" alt="กระทง1">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="item-relative">
+                        <div class="items-slide-58 item-base-slide ">
+                            <div class="items-topdown">
+                                <div class="items-swing item-1 items-thumb">
+                                <img src="./img/krathong-1.png" alt="กระทง1">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                                                        
+                                                                        
+                    <div class="item-relative">
+                        <div class="items-slide-59 item-base-slide ">
+                            <div class="items-topdown">
+                                <div class="items-swing item-2 items-thumb">
+                                <img src="./img/krathong-2.png" alt="กระทง2">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                                                        
+                    <div class="item-relative">
+                        <div class="items-slide-60 item-base-slide " >
+                            <div class="items-topdown">
+                                <div class="items-swing item-3 items-thumb">
+                                <img src="./img/krathong-3.png" alt="กระทง3">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                                                        
+                                                                        
+                 <div class="item-relative">
+                        <div class="items-slide-61 item-base-slide ">
+                            <div class="items-topdown">
+                                <div class="items-swing item-4 items-thumb">
+                                <img src="./img/krathong-4.png" alt="กระทง4">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                                                        
+                    <div class="item-relative">
+                        <div class="items-slide-62 item-base-slide ">
+                            <div class="items-topdown">
+                                <div class="items-swing item-0 items-thumb">
+                                <img src="./img/krathong-5.png" alt="กระทง0">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                                                        
+                    <div class="item-relative">
+                        <div class="items-slide-63 item-base-slide ">
+                            <div class="items-topdown">
+                                <div class="items-swing item-1 items-thumb">
+                                <img src="./img/krathong-6.png" alt="กระทง1">
+                                </div>
+                            </div>
+                        </div>
+                    </div>																			
+                </div>
+        </div>
+</div>
+
+    <div class="message-form">
+        <input type="text" id="messageInput" placeholder="กรุณาพิมพ์ข้อความ...">
+        <button onclick="sendMessage()">ส่งข้อความ</button>
     </div>
-    <div class="button-container">
-        <button>ปุ่มกด</button>
-    </div>
+
+    <div class="message-box" id="messageBox"></div>
+
+    <script>
+        function sendMessage() {
+            var message = document.getElementById("messageInput").value;
+            var messageBox = document.getElementById("messageBox");
+
+            if (message.trim() !== "") {
+                messageBox.innerHTML = message;
+                messageBox.style.display = "block";
+
+                // ซ่อนข้อความหลังจาก 5 วินาที
+                setTimeout(function() {
+                    messageBox.style.display = "none";
+                }, 5000);
+            }
+        }
+    </script>
 </body>
 </html>
