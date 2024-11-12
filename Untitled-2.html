@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floating Message Form</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        input[type="text"] {
+            padding: 10px;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            width: 300px;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .floating-message {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 10px 20px;
+            background-color: #ff9800;
+            color: white;
+            border-radius: 5px;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+            animation: moveRight 5s ease-in-out forwards;
+        }
+
+        @keyframes moveRight {
+            0% { transform: translate(-50%, -50%) translateX(0); opacity: 1; }
+            50% { transform: translate(-50%, -50%) translateX(50px); }
+            100% { transform: translate(-50%, -50%) translateX(200px); opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <input type="text" id="inputText" placeholder="พิมพ์ข้อความที่นี่...">
+        <button onclick="showFloatingMessage()">ส่งข้อความ</button>
+    </div>
+
+    <script>
+        function showFloatingMessage() {
+            const input = document.getElementById('inputText');
+            const text = input.value;
+            if (!text) return; // ไม่ทำงานหากไม่มีข้อความ
+
+            const message = document.createElement('div');
+            message.className = 'floating-message';
+            message.innerText = text;
+            document.body.appendChild(message);
+
+            // ลบข้อความหลังจาก 5 วินาที
+            setTimeout(() => {
+                message.remove();
+            }, 30000);
+
+            input.value = ''; // ล้างข้อความในฟิลด์
+        }
+    </script>
+</body>
+</html>
