@@ -228,32 +228,67 @@
 		</div>
 		
 
+		
+
 		<div class="container">
 			<span style="text-align: center">
-			<input type="text" id="inputText" placeholder="พิมพ์คำขอพรที่นี่...">
-			<br/>
-			<button onclick="showFloatingMessage()">ลอยกระทง</button>
-		</span>		</div>
-	
+				<input type="text" id="inputText" placeholder="พิมพ์คำขอพรที่นี่...">
+				<br/>
+				<button onclick="showFloatingMessage()">ลอยกระทง</button>
+			</span>
+		</div>
+		
 		<script>
 			function showFloatingMessage() {
 				const input = document.getElementById('inputText');
-				const text = input.value;
-				if (!text) return; // ไม่ทำงานหากไม่มีข้อความ
-	
+				const text = input.value.trim(); // ใช้ trim() เพื่อลบช่องว่างหน้าหลัง
+		
+				// ตรวจสอบว่ามีข้อความหรือไม่
+				if (!text) {
+					showTemporaryWarning('กรุณากรอกคำขอพรของท่านก่อนลอยกระทง!');
+					return; // หยุดการทำงานหากไม่มีข้อความ
+				}
+		
+				// สร้างข้อความลอย
 				const message = document.createElement('div');
 				message.className = 'floating-message';
+				message.style.zIndex = '1000'; // เพิ่มค่า z-index เพื่อให้ข้อความอยู่บนสุด
 				message.innerText = text;
 				document.body.appendChild(message);
-	
+		
 				// ลบข้อความหลังจาก 5 วินาที
 				setTimeout(() => {
 					message.remove();
-				}, 30000);
-	
+				}, 15000);
+		
 				input.value = ''; // ล้างข้อความในฟิลด์
 			}
+		
+			function showTemporaryWarning(message) {
+				const warning = document.createElement('div');
+				warning.innerText = message;
+				warning.style.position = 'fixed';
+				warning.style.top = '50%';
+				warning.style.left = '50%';
+				warning.style.transform = 'translate(-50%, -50%)';
+				warning.style.backgroundColor = 'rgba(255, 0, 0, 0.8)';
+				warning.style.color = 'white';
+				warning.style.padding = '10px 20px';
+				warning.style.borderRadius = '5px';
+				warning.style.zIndex = '1000';
+				warning.style.fontSize = '16px';
+				warning.style.textAlign = 'center';
+				warning.style.fontFamily = 'Mitr';
+		
+				document.body.appendChild(warning);
+		
+				// ลบข้อความเตือนหลังจาก 3 วินาที
+				setTimeout(() => {
+					warning.remove();
+				}, 2000);
+			}
 		</script>
+		
 
 		
 
