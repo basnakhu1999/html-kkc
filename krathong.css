@@ -2,6 +2,12 @@
 			  background: url("#");
 			
 			}
+
+			.bg-province1 {
+				  background: url("https://raw.githubusercontent.com/basnakhu1999/html-kkc/refs/heads/main/scr/BG1.jpg") no-repeat #000 center;
+				  background-size: cover;
+				  background-position: top;
+				}
 			  .items-slide {
 				animation: 5s linear 0s normal none infinite slide;
 			}
@@ -199,11 +205,6 @@
 				  margin: 0;
 				}
 
-			.bg-province1 {
-				  background: url("https://github.com/basnakhu1999/html-kkc/blob/main/scr/BG1.jpg?raw=true") no-repeat #000 center;
-				  background-size: cover;
-				  background-position: top;
-				}
 				
 			.bg-main .river {
 				  height: 120px;
